@@ -10,7 +10,7 @@ dotenv.config();
 import { db } from "./server/db.js";
 import { ContractStatus, User } from "./src/types.js";
 
-const app = express();
+export const app = express();
 const PORT = 3000;
 
 app.use(express.json());
@@ -447,4 +447,8 @@ async function startServer() {
   });
 }
 
-startServer();
+if (!process.env.VERCEL) {
+  startServer();
+}
+
+export default app;
