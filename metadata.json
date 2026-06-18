@@ -1,0 +1,6 @@
+{
+  "name": "ClauseTrack",
+  "description": "A secure client-facing legal portal for rich text legal intake, linear contract reviews, multi-tenant isolation, audit tracking, and AI-powered attorney summaries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
